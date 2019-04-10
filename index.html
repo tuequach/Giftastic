@@ -12,18 +12,25 @@
 
 <body>
     <div class= "container"> 
+            <button class="btn btn-default" id="add-gif" type="gif">Create a Gif</button>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script type="text/javascript">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
               // Example queryURL for Giphy API
-              var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
+              
+              $("#add-gif").on("click", function (event) {
+              var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=V6C5daTHzk80YfiMLv6CXZxC00TBvWK9;
           
               $.ajax({
                 url: queryURL,
                 method: "GET"
-              }).then(function(response) {
-                console.log(response);
+             });
               });
+
+const topics = [];
+
+
             </script>
           
     </div>
