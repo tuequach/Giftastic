@@ -1,0 +1,18 @@
+.navbar-brand {
+    text-align: center;
+    color: red;
+    padding: 0 auto;
+    margin: 0 auto; 
+    width: 300;
+    height: 300;
+}
+#add-gif {
+    padding: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+    color: blue;
+    outline: 2px dashed blue;
+}
+.container {
+    border: 2px black;
+}
