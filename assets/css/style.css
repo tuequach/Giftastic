@@ -1,3 +1,13 @@
+ body {
+    background-color: grey;
+}
+h1 {
+    text-align: center;
+    color: black;
+    margin: auto;
+    padding: auto;
+    
+}
 .navbar-brand {
     color: red;
     padding: 0 auto;
@@ -14,4 +24,6 @@
 }
 .container {
     border: 2px black;
+    margin: auto;  
+    padding: auto;   
 }
