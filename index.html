@@ -10,63 +10,47 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand">
+    <nav class="navbar-brand">
+        <p>
           GifTastic
-        </a>
+        </p>
       </nav>
       
 </head>
 
 <body>
-    <div class= "container"> 
-            <button class="btn btn-default" id="add-gif" type="gif">Create a Gif</button>
-            <button class="btn btn-default" id="add-gif" type="gif">Anime</button>
-            <button class="btn btn-default" id="add-gif" type="gif">EDM</button>
-            <button class="btn btn-default" id="add-gif" type="gif">Manga</button>
-            <button class="btn btn-default" id="add-gif" type="gif">Movies</button>
-
             <div class="container">
-                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-                <div class="row">
-                  <div class="col-12 col-md-8">.col-12 .col-md-8</div>
-                  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                </div>
               
                 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
                 <div class="row">
-                  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+                  <div class="col-6 col-md-4">
+                        <button class="btn btn-default" id="add-gif" type="gif">Anime</button>
+                  </div>
+                  <div class="col-6 col-md-4">
+                        <button class="btn btn-default" id="add-gif" type="gif">EDM</button>
+                  </div>
+                  <div class="col-6 col-md-4">
+                        <button class="btn btn-default" id="add-gif" type="gif">Manga</button>
+                  </div>
                 </div>
-              
-                <!-- Columns are always 50% wide, on mobile and desktop -->
+            </br>
                 <div class="row">
-                  <div class="col-6">.col-6</div>
-                  <div class="col-6">.col-6</div>
-                </div>
-              </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-              // Example queryURL for Giphy API
+                        <div class="col-6 col-md-4">
+                              <button class="btn btn-default" id="add-gif" type="gif">Manga</button>
+                        </div>
+                        <div class="col-6 col-md-4">
+                              <button class="btn btn-default" id="add-gif" type="gif">Movies</button>
+                        </div>
+                        <div class="col-6 col-md-4">
+                              <button class="btn btn-default" id="add-gif" type="gif">Create Gif</button>
+                        </div>
+                      </div>
+        
               
-              $("#add-gif").on("click", function (event) {
-              var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=V6C5daTHzk80YfiMLv6CXZxC00TBvWK9;
-          
-              $.ajax({
-                url: queryURL,
-                method: "GET"
-             });
-              });
-
-const topics = [];
-
-
-            </script>
-          
+             
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javscript/javascript/css"></script>     
 
 </body>
 
