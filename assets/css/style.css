@@ -1,0 +1,43 @@
+ body {
+    background-color: grey;
+}
+h1 {
+    text-align: center;
+    color: gold;
+    margin: auto;
+    padding: auto;
+    background-color: black;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.navbar-brand {
+    color: red;
+    padding: 0 auto;
+    margin: 0 auto; 
+    width: 300;
+    height: 300;
+    float: center;
+}
+#add-gif {
+    padding: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+    color: gold;
+    outline: 2px dashed gold;
+    background-color:black;
+}
+.container {
+    border: 2px black;
+    margin: auto;  
+    padding: auto;   
+}
+
+.footer {
+    background-color: black;
+    color: gold;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+
+}
