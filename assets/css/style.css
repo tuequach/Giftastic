@@ -3,10 +3,12 @@
 }
 h1 {
     text-align: center;
-    color: black;
+    color: gold;
     margin: auto;
     padding: auto;
-    
+    background-color: black;
+    font-size: 16px;
+
 }
 .navbar-brand {
     color: red;
@@ -14,16 +16,27 @@ h1 {
     margin: 0 auto; 
     width: 300;
     height: 300;
+    float: center;
 }
 #add-gif {
     padding: 0 auto;
     margin: 0 auto;
     text-align: center;
-    color: blue;
-    outline: 2px dashed blue;
+    color: gold;
+    outline: 2px dashed gold;
+    background-color:black;
 }
 .container {
     border: 2px black;
     margin: auto;  
     padding: auto;   
+}
+
+.footer {
+    background-color: black;
+    color: gold;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+
 }
