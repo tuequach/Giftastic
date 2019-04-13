@@ -1,48 +1,59 @@
- body {
-    background-color: grey;
+html {
+    position: relative;
+    min-height:100%;
 }
+
+body {
+    background-color: grey;
+    background-image: url("../images/cover.jpg"),  center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    object-position: center;
+}
+
 h1 {
     text-align: center;
-    color: gold;
+    /* color: gold;
 
-    background-color: black;
+    background-color: black; */
     font-size: 24px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .summary {
     text-align: center;
-    color: gold;
-    background-color: black;
-    
+    /* color: gold;
+    background-color: black; */
     font-size: 20px;
 
-
 }
-#add-gif {
-    padding: 0 auto;
-    margin: 0 auto;
-    text-align: center;
-    color: gold;
+button {
+    padding: 10px;
+    /* color: gold;
     outline: 2px dashed gold;
-    background-color:black;
+    background-color:black; */
+    height: 50px;
+    width: 200px;
+    position: relative;
+    
 }
-.container {
-    border: 2px black;
-    margin: auto;  
-    padding: auto;   
-}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 form {
     text-align: center;
-    color: gold;
-    background-color: black;
+    /* color: gold;
+    background-color: black; */
     margin: auto;
     padding: auto;
 }
 
 .footer {
-    background-color: black;
-    color: gold;
+    /* background-color: black;
+    color: gold; */
     text-align: center;
     margin: auto;
     padding: auto;
