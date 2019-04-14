@@ -4,58 +4,60 @@ html {
 }
 
 body {
-    background-color: grey;
-    background-image: url("../images/cover.jpg"),  center fixed;
+    background-image: url("../images/cover.jpg") ;
     background-size: cover;
-    height: 100%;
-    overflow: hidden;
-    object-position: center;
-}
-
-h1 {
-    text-align: center;
-    /* color: gold;
-
-    background-color: black; */
-    font-size: 24px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.summary {
-    text-align: center;
-    /* color: gold;
-    background-color: black; */
-    font-size: 20px;
-
-}
-button {
-    padding: 10px;
-    /* color: gold;
-    outline: 2px dashed gold;
-    background-color:black; */
-    height: 50px;
-    width: 200px;
+    margin-bottom: 60px;
     position: relative;
-    
 }
-.wrapper {
+/* #wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-form {
+    justify-content: center; */
+
+#header {
     text-align: center;
-    /* color: gold;
-    background-color: black; */
+    font-size: 24px;
+    height: 70px;
+    color: gold;
+}
+#title {
+    padding-top:16px;
+    text-align: center;
+}
+#add-gifs {
+    margin-top:10px;
+}
+.btn {
     margin: auto;
+    color:gold;
+    background-color:black; 
+    height: 50px;
+    width: 200px;
     padding: auto;
 }
+#gifSpace {
+    margin-top:20px;
+}
 
-.footer {
-    /* background-color: black;
-    color: gold; */
-    text-align: center;
-    margin: auto;
-    padding: auto;
+.border {
+    border-radius: 4px;
+    border: 2px solid gold;
+}
+.submit {
+    background-color: black;
+    color: white;
+    border: 2px solid gold;
 
+}
+#sticky {
+    width:100%;
+    height:44px;
+    padding:auto;
+    color: black;
+    font-weight:bold;
+    font-size:24px;
+    text-align:center;
+    position:fixed;    /*Here's what sticks it*/
+    bottom:0;          /*to the bottom of the window*/
+    left:0;            /*and to the left of the window.*/
 }

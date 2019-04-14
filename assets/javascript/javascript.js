@@ -6,7 +6,7 @@ var button;
 var buttonGen = function () {
     $("#add-gifs").empty();
     for (var i= 0; i< gifs.length; i++){
-      button = $("<button type=" + "button" + ">" + gifs[i] + "</button>").attr("data",gifs[i]);
+      button = $("<button type=" + "button" + ">" + gifs[i] + "</button>").addClass("btn").attr("data", gifs[i]);
         $("#add-gifs").append(button);
     };
 }
@@ -14,14 +14,14 @@ var buttonGen = function () {
 // Adding in API from giphy.
 $("#add-gifs").on("click", ".btn", function (){
                 var obj = $(this).attr("data");
-                var queryURL = "https://api.giphy.com/v1/gifs/random?=" + obj + "&api_key=V6C5daTHzk80YfiMLv6CXZxC00TBvWK9&tag=&rating=G";
+                var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + obj + "&api_key=V6C5daTHzk80YfiMLv6CXZxC00TBvWK9&limit=5&rating=G";
 
             //implimenting ajaax
                 $.ajax({
                   url: queryURL,
                   method: "GET"
-               })
-               .done(function(response){
+               }).done(function(response){
+
                   console.log(response);
 
                 var results = response.data;
@@ -33,19 +33,23 @@ $("#add-gifs").on("click", ".btn", function (){
                   var p = $("<p>");
                   p.text(results[i].rating);
                   var p = $("<p>").text("Rating: " + results[i].rating);
-// some sort of images 
-                  gifsImage.attr("src", results[i].images.fixedheightstill.url);
-                  gifsImage.attr("data-still", results[i].images.fixedheightstill.url);
-                  gifsImage.attr("data-animate", results[i].images.fixedheightstill.url);
-                  gifsImage.attr("data-state", results[i].images.fixedheightstill.url);
 
-            //appending images 
+                  var gifsImage = $("<img>").addClass("border");
+
+// some sort of images 
+      gifsImage.attr("src", results[i].images.fixed_height_still.url);
+      gifsImage.attr("data-still", results[i].images.fixed_height_still.url);
+      gifsImage.attr("data-animate", results[i].images.fixed_height.url)
+      gifsImage.attr("data-state", "still")
+      gifsImage.addClass("gif");
+
+ //appending images 
             gifsDiv.append(gifsImage);
             gifsDiv.append(p);
             $("#gifSpace").prepend(gifsDiv);
                 }
-              })
-            })
+    })
+})
   
 // animation for gifhy images 
 
@@ -71,7 +75,7 @@ $(".submit").on("click", function (event){
   event.preventDefault (); //so page doesn't reload
     console.log("submit");
 
-    const newGifs = $("#gif-input").val().trim();
+    newGifs = $("#gif-input").val().trim();
 
     gifs.push(newGifs);
     console.log(gifs);
